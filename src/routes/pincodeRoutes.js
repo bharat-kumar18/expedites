@@ -11,7 +11,7 @@ const {
     updatePincodeStatus
 } = require("../controllers/pincodeController");
 
-const authMiddleware = require("../middleware/authMiddleware");
+const {authMiddleware} = require("../middleware/authMiddleware");
 const roleMiddleware = require("../middleware/roleMiddleware");
 
 const {

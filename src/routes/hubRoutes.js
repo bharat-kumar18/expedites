@@ -11,7 +11,7 @@ const {
     updateHubStatus
 } = require("../controllers/hubController");
 
-const authMiddleware = require("../middleware/authMiddleware");
+const {authMiddleware} = require("../middleware/authMiddleware");
 const roleMiddleware = require("../middleware/roleMiddleware");
 
 const router = express.Router();

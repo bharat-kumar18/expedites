@@ -13,6 +13,14 @@ const pickupRoutes = require("./src/routes/pickupRoutes");
 const shipmentMovementRoutes = require("./src/routes/shipmentMovementRoutes");
 const deliveryRoutes = require("./src/routes/deliveryRoutes");
 const trackingRoutes = require("./src/routes/trackingRoutes");
+const paymentRoutes = require("./src/routes/paymentRoutes");
+const walletRoutes = require("./src/routes/walletRoutes");
+const codRoutes = require("./src/routes/codRoutes");
+const shipmentCostRoutes =require("./src/routes/shipmentCostRoutes");
+const shipmentPaymentRoutes = require("./src/routes/shipmentPaymentRoutes");
+const refundRoutes = require("./src/routes/refundRoutes");
+const complaintRoutes = require("./src/routes/complaintRoutes");
+const reportRoutes = require("./src/routes/reportRoutes");
 
 const app = express();
 
@@ -49,7 +57,14 @@ app.use("/api/pickups", pickupRoutes);
 app.use("/api/shipment-movements", shipmentMovementRoutes);
 app.use("/api/deliveries", deliveryRoutes);
 app.use("/api/tracking", trackingRoutes);
-
+app.use("/api/payments", paymentRoutes);
+app.use("/api/wallet", walletRoutes);
+app.use("/api/cod", codRoutes);
+app.use("/api/shipment-costs", shipmentCostRoutes);
+app.use("/api/shipment-payment", shipmentPaymentRoutes);
+app.use("/api/refund", refundRoutes);
+app.use("/api/complaints", complaintRoutes);
+app.use("/api/reports", reportRoutes);
 
 // ==========================================
 // SERVER

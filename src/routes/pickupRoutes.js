@@ -12,7 +12,7 @@ const {
     validateCompletePickup
 } = require("../validations/pickupValidation");
 
-const authMiddleware =
+const {authMiddleware} =
     require("../middleware/authMiddleware");
 
 const roleMiddleware =

@@ -12,14 +12,10 @@ const {
 } = require("../validations/trackingValidation");
 
 
-const 
-  authMiddleware
- = require("../middleware/authMiddleware");
+const {authMiddleware} = require("../middleware/authMiddleware");
 
 
-const 
-  roleMiddleware
- = require("../middleware/roleMiddleware");
+const roleMiddleware = require("../middleware/roleMiddleware");
 
 
 // ==========================================

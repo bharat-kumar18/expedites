@@ -9,7 +9,7 @@ const {
   validateShipment
 } = require("../validations/shipmentValidation");
 
-const authMiddleware = require("../middleware/authMiddleware");
+const {authMiddleware} = require("../middleware/authMiddleware");
 
 const roleMiddleware = require("../middleware/roleMiddleware");
 

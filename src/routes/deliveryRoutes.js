@@ -18,7 +18,7 @@ const {
   require("../validations/deliveryValidation");
 
 
-const authMiddleware =
+const {authMiddleware} =
   require("../middleware/authMiddleware");
 
 
